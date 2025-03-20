@@ -35,9 +35,10 @@
 
     combos {
         compatible = "zmk,combos";
-BT_CLEAR {
-         bindings = <&CL_BT>;
-         key-positions = <0 12 24>;};
+        BT_CLEAR {
+             bindings = <&CL_BT>;
+             key-positions = <0 12 24>;
+        };
     };
 
     macros {
@@ -54,32 +55,42 @@ BT_CLEAR {
             bindings = <&kp ESCAPE &kp COLON>;
             label = "ENTER_VIM_COMMAND";
         };
-EN_BT0: EN_BT0 {
-        compatible = "zmk,behavior-macro";
-      
-         #binding-cells = <0>;
-         bindings = <&bt BT_SEL 0 &rgb_ug RGB_TOG>,<&macro_pause_for_release>,<&rgb_ug RGB_TOG>;
-         label = "EN_BT0";};EN_BT1: EN_BT1 {
-        compatible = "zmk,behavior-macro";
-      
-         #binding-cells = <0>;
-         bindings = <&bt BT_SEL 1 &rgb_ug RGB_TOG>,<&macro_pause_for_release>,<&rgb_ug RGB_TOG>;
-         label = "EN_BT1";};EN_BT2: EN_BT2 {
-        compatible = "zmk,behavior-macro";
-      
-         #binding-cells = <0>;
-         bindings = <&bt BT_SEL 2 &rgb_ug RGB_TOG>,<&macro_pause_for_release>,<&rgb_ug RGB_TOG>;
-         label = "EN_BT2";};CL_BT:CL_BT0 {
-        compatible = "zmk,behavior-macro";
-      
-         #binding-cells = <0>;
-         bindings = <&bt BT_CLR &rgb_ug RGB_TOG>,<&macro_pause_for_release>,<&rgb_ug RGB_TOG>;
-         label = "CL_BT0";};
+        EN_BT0: EN_BT0 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+             bindings = <&bt BT_SEL 0 &rgb_ug RGB_TOG>
+                    ,<&macro_pause_for_release>
+                    ,<&rgb_ug RGB_TOG>
+                    ;
+            label = "EN_BT0";
+        };
+        EN_BT1: EN_BT1 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+             bindings = <&bt BT_SEL 1 &rgb_ug RGB_TOG>
+                    ,<&macro_pause_for_release>
+                    ,<&rgb_ug RGB_TOG>
+                    ;
+            label = "EN_BT1";
+        };
+        EN_BT2: EN_BT2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+             bindings = <&bt BT_SEL 2 &rgb_ug RGB_TOG>
+                    ,<&macro_pause_for_release>
+                    ,<&rgb_ug RGB_TOG>
+                    ;
+            label = "EN_BT2";
+        };
+        CL_BT:CL_BT0 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&bt BT_CLR &rgb_ug RGB_TOG>,<&macro_pause_for_release>,<&rgb_ug RGB_TOG>;
+             label = "CL_BT0";
+        };
 
-    
-macros {};
+    };
 
-behaviors {};
 keymap {
         compatible = "zmk,keymap";
 
