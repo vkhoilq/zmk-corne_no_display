@@ -259,5 +259,5 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
 combos:
-- p: [13, 14]
-  k: B
+- p: [0, 12, 24]
+  k: '&CL_BT'
